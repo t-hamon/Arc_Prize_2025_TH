@@ -45,11 +45,11 @@ def apply_transformations(grid, transformations):
             grid = flip_grid(grid, params['axis'])
         elif trans_name == 'scaling':
             grid = tile_grid(grid, params['factor'])
-        # Ajouter d'autres transformations
     return grid
 
 # Fonction de tuilage
 def tile_grid(grid, factor):
     """Répète la grille selon un facteur d'échelle"""
     arr = np.array(grid)
+
     return np.tile(arr, factor).tolist()
