@@ -86,6 +86,15 @@ The data is then listed as follows:
 </table>
 </div>
 
+
+	task_id	pair_id	input_shape	output_shape	input_colors	output_colors	recoloration	rotation_90	rotation_180	rotation_270	...	repetition	padding	translation	tiled_subgrid	partial_symetry	pattern_checkerboard	pattern_horizontal_stripes	pattern_vertical_stripes	pattern_uniform_blocks	shape_based_recoloration
+0	00576224	0	[2, 2]	[6, 6]	[3, 4, 7, 9]	[3, 4, 7, 9]	False	False	False	False	...	False	True	True	False	None	False	True	True	False	False
+1	00576224	1	[2, 2]	[6, 6]	[4, 6, 8]	[4, 6, 8]	False	False	False	False	...	False	True	True	False	None	False	True	True	False	False
+2	007bbfb7	0	[3, 3]	[9, 9]	[0, 6]	[0, 6]	False	False	False	False	...	False	True	True	False	None	False	False	False	False	False
+3	007bbfb7	1	[3, 3]	[9, 9]	[0, 4]	[0, 4]	False	False	False	False	...	False	True	True	False	None	False	False	False	False	False
+4	007bbfb7	2	[3, 3]	[9, 9]	[0, 2]	[0, 2]	False	False	False	False	...	False	True	True	False	None	False	False	False	False	False
+5 rows × 23 columns
+
 Tensors are created with PyTorch, then we use a ConvNet, convert to one-hot labels per pixel, and then train the ConvNet model for 40 Epochs.
 
 First Problem:
