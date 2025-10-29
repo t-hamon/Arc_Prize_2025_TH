@@ -41,60 +41,153 @@ The data is then listed as follows:
     <tr style="text-align: right;">
       <th></th>
       <th>task_id</th>
-      <th>correct</th>
-      <th>predicted</th>
-      <th>expected</th>
+      <th>pair_id</th>
+      <th>input_shape</th>
+      <th>output_shape</th>
+      <th>input_colors</th>
+      <th>output_colors</th>
+      <th>recoloration</th>
+      <th>rotation_90</th>
+      <th>rotation_180</th>
+      <th>rotation_270</th>
+      <th>...</th>
+      <th>repetition</th>
+      <th>padding</th>
+      <th>translation</th>
+      <th>tiled_subgrid</th>
+      <th>partial_symetry</th>
+      <th>pattern_checkerboard</th>
+      <th>pattern_horizontal_stripes</th>
+      <th>pattern_vertical_stripes</th>
+      <th>pattern_uniform_blocks</th>
+      <th>shape_based_recoloration</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
       <td>00576224</td>
+      <td>0</td>
+      <td>[2, 2]</td>
+      <td>[6, 6]</td>
+      <td>[3, 4, 7, 9]</td>
+      <td>[3, 4, 7, 9]</td>
       <td>False</td>
-      <td>[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,...</td>
-      <td>[[[3, 2, 3, 2, 3, 2], [7, 8, 7, 8, 7, 8], [2, ...</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>...</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>None</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
     </tr>
     <tr>
       <th>1</th>
       <td>00576224</td>
+      <td>1</td>
+      <td>[2, 2]</td>
+      <td>[6, 6]</td>
+      <td>[4, 6, 8]</td>
+      <td>[4, 6, 8]</td>
       <td>False</td>
-      <td>[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,...</td>
-      <td>[[[3, 2, 3, 2, 3, 2], [7, 8, 7, 8, 7, 8], [2, ...</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>...</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>None</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>False</td>
     </tr>
     <tr>
       <th>2</th>
       <td>007bbfb7</td>
+      <td>0</td>
+      <td>[3, 3]</td>
+      <td>[9, 9]</td>
+      <td>[0, 6]</td>
+      <td>[0, 6]</td>
       <td>False</td>
-      <td>[[6, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,...</td>
-      <td>[[[7, 0, 7, 0, 0, 0, 7, 0, 7], [7, 0, 7, 0, 0,...</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>...</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>None</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
     </tr>
     <tr>
       <th>3</th>
       <td>007bbfb7</td>
+      <td>1</td>
+      <td>[3, 3]</td>
+      <td>[9, 9]</td>
+      <td>[0, 4]</td>
+      <td>[0, 4]</td>
       <td>False</td>
-      <td>[[4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,...</td>
-      <td>[[[7, 0, 7, 0, 0, 0, 7, 0, 7], [7, 0, 7, 0, 0,...</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>...</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>None</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
     </tr>
     <tr>
       <th>4</th>
       <td>007bbfb7</td>
+      <td>2</td>
+      <td>[3, 3]</td>
+      <td>[9, 9]</td>
+      <td>[0, 2]</td>
+      <td>[0, 2]</td>
       <td>False</td>
-      <td>[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,...</td>
-      <td>[[[7, 0, 7, 0, 0, 0, 7, 0, 7], [7, 0, 7, 0, 0,...</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>...</td>
+      <td>False</td>
+      <td>True</td>
+      <td>True</td>
+      <td>False</td>
+      <td>None</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
+      <td>False</td>
     </tr>
   </tbody>
 </table>
+<p>5 rows × 23 columns</p>
 </div>
-
-
-	task_id	pair_id	input_shape	output_shape	input_colors	output_colors	recoloration	rotation_90	rotation_180	rotation_270	...	repetition	padding	translation	tiled_subgrid	partial_symetry	pattern_checkerboard	pattern_horizontal_stripes	pattern_vertical_stripes	pattern_uniform_blocks	shape_based_recoloration
-0	00576224	0	[2, 2]	[6, 6]	[3, 4, 7, 9]	[3, 4, 7, 9]	False	False	False	False	...	False	True	True	False	None	False	True	True	False	False
-1	00576224	1	[2, 2]	[6, 6]	[4, 6, 8]	[4, 6, 8]	False	False	False	False	...	False	True	True	False	None	False	True	True	False	False
-2	007bbfb7	0	[3, 3]	[9, 9]	[0, 6]	[0, 6]	False	False	False	False	...	False	True	True	False	None	False	False	False	False	False
-3	007bbfb7	1	[3, 3]	[9, 9]	[0, 4]	[0, 4]	False	False	False	False	...	False	True	True	False	None	False	False	False	False	False
-4	007bbfb7	2	[3, 3]	[9, 9]	[0, 2]	[0, 2]	False	False	False	False	...	False	True	True	False	None	False	False	False	False	False
-5 rows × 23 columns
-
 Tensors are created with PyTorch, then we use a ConvNet, convert to one-hot labels per pixel, and then train the ConvNet model for 40 Epochs.
 
 First Problem:
