@@ -205,6 +205,70 @@ Class 7: 14,794 pixels (1.53%)
 Class 8: 21,614 pixels (2.23%)
 Class 9: 3,369 pixels (0.35%)
 
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>task_id</th>
+      <th>correct</th>
+      <th>predicted</th>
+      <th>expected</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>00576224</td>
+      <td>False</td>
+      <td>[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,...</td>
+      <td>[[[3, 2, 3, 2, 3, 2], [7, 8, 7, 8, 7, 8], [2, ...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>00576224</td>
+      <td>False</td>
+      <td>[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,...</td>
+      <td>[[[3, 2, 3, 2, 3, 2], [7, 8, 7, 8, 7, 8], [2, ...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>007bbfb7</td>
+      <td>False</td>
+      <td>[[6, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,...</td>
+      <td>[[[7, 0, 7, 0, 0, 0, 7, 0, 7], [7, 0, 7, 0, 0,...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>007bbfb7</td>
+      <td>False</td>
+      <td>[[4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,...</td>
+      <td>[[[7, 0, 7, 0, 0, 0, 7, 0, 7], [7, 0, 7, 0, 0,...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>007bbfb7</td>
+      <td>False</td>
+      <td>[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,...</td>
+      <td>[[[7, 0, 7, 0, 0, 0, 7, 0, 7], [7, 0, 7, 0, 0,...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
 <Figure size 600x300 with 2 Axes><img width="551" height="308" alt="image" src="https://github.com/user-attachments/assets/dd34f838-5e48-4ea2-8d28-d9c8bc2a7beb" />
 
 
