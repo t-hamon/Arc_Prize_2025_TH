@@ -1,0 +1,15 @@
+transformation,frequency,example_task
+shape_based_recoloration,0.586,009d5c81
+recoloration,0.526,009d5c81
+padding,0.044,00576224
+translation,0.044,00576224
+pattern_vertical_stripes,0.033,00576224
+pattern_horizontal_stripes,0.032,00576224
+rotation_180,0.003,3c9b0459
+repetition,0.003,a416b8f3
+tiled_subgrid,0.003,a416b8f3
+pattern_uniform_blocks,0.002,28e73c20
+transpose,0.002,74dd1130
+flip_horizontal,0.001,67a3c6ac
+flip_vertical,0.001,68b16354
+rotation_90,0.001,ed36ccf7

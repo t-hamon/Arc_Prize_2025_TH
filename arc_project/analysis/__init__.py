@@ -1,0 +1,2 @@
+from .detectors import detect_transformations
+from .detectors import detect_shape_based_recoloration

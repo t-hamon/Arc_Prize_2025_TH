@@ -1,0 +1,72 @@
+[
+  {
+    "transformation": "shape_based_recoloration",
+    "frequency": 0.586,
+    "example_task": "009d5c81"
+  },
+  {
+    "transformation": "recoloration",
+    "frequency": 0.526,
+    "example_task": "009d5c81"
+  },
+  {
+    "transformation": "padding",
+    "frequency": 0.044,
+    "example_task": "00576224"
+  },
+  {
+    "transformation": "translation",
+    "frequency": 0.044,
+    "example_task": "00576224"
+  },
+  {
+    "transformation": "pattern_vertical_stripes",
+    "frequency": 0.033,
+    "example_task": "00576224"
+  },
+  {
+    "transformation": "pattern_horizontal_stripes",
+    "frequency": 0.032,
+    "example_task": "00576224"
+  },
+  {
+    "transformation": "rotation_180",
+    "frequency": 0.003,
+    "example_task": "3c9b0459"
+  },
+  {
+    "transformation": "repetition",
+    "frequency": 0.003,
+    "example_task": "a416b8f3"
+  },
+  {
+    "transformation": "tiled_subgrid",
+    "frequency": 0.003,
+    "example_task": "a416b8f3"
+  },
+  {
+    "transformation": "pattern_uniform_blocks",
+    "frequency": 0.002,
+    "example_task": "28e73c20"
+  },
+  {
+    "transformation": "transpose",
+    "frequency": 0.002,
+    "example_task": "74dd1130"
+  },
+  {
+    "transformation": "flip_horizontal",
+    "frequency": 0.001,
+    "example_task": "67a3c6ac"
+  },
+  {
+    "transformation": "flip_vertical",
+    "frequency": 0.001,
+    "example_task": "68b16354"
+  },
+  {
+    "transformation": "rotation_90",
+    "frequency": 0.001,
+    "example_task": "ed36ccf7"
+  }
+]
