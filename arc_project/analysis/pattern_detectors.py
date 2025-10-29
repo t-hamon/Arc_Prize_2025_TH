@@ -17,11 +17,11 @@ def detect_object_transformations(input_grid, output_grid):
     for inp_obj in input_objects:
         for out_obj in output_objects:
             if is_same_size(inp_obj['shape'], out_obj['shape']):
-                # Calculer le déplacement
+                # Calcul du déplacement
                 dx = out_obj['position'][0] - inp_obj['position'][0]
                 dy = out_obj['position'][1] - inp_obj['position'][1]
                 
-                # Calculer le changement de couleur
+                # Calcul du changement de couleur
                 if inp_obj['color'] != out_obj['color']:
                     transformations.append(('recolor', {
                         'from': inp_obj['color'],
@@ -43,7 +43,7 @@ def find_objects(grid):
         min_y, min_x = np.min(positions, axis=0)
         max_y, max_x = np.max(positions, axis=0)
         
-        # Extraire la forme et la couleur
+        # Extraction la forme et la couleur
         shape = grid[min_y:max_y+1, min_x:max_x+1]
         color = grid[positions[0][0], positions[0][1]]
         
@@ -53,4 +53,5 @@ def find_objects(grid):
             'position': (min_y, min_x)
         })
     
+
     return objects
