@@ -16,9 +16,7 @@ It is important to emphasize that I did not perform the various resizings of the
 
 The detected transformations are then listed in the "transformation_catalog" via the create_transformation_catalog.ipynb script.
 
-Two notebooks were then created to attempt solutions:
-- analysis_transformations.ipynb
-- analysis_transformations2.ipynb
+"analysis_transformations.ipynb" was created to attempt solutions
 
 The data is then listed as follows:
 
