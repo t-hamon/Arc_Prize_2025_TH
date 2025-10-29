@@ -22,11 +22,11 @@ class ARCPredictor:
         if task_id in self.transformations_db:
             return self.apply_known_transformations(task_id, input_grid)
         
-        # 2. Appliquer les transformations génériques
+        # 2. Application des transformations génériques
         return self.apply_generic_transformations(input_grid)
     
     def apply_known_transformations(self, task_id, input_grid):
-        """Applique les transformations spécifiques à la tâche"""
+        """Application des transformations spécifiques à la tâche"""
         # Implémentation basée sur detected_transformations.json
         pass
 
@@ -64,4 +64,5 @@ class ARCPredictor:
         if not output_colors.issubset(input_colors | {0}):
             return False
         
+
         return True
