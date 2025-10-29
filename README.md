@@ -1,6 +1,15 @@
 # Arc_Prize_2025_TH
 ARC Challenge involving the prediction of specific tasks. The grids maintain their input dimensions.
 
+This challenge is a Data challenge that aims to predict tasks based on given examples.
+
+The machine, lacking human judgment, does not specifically understand what is being asked and returns answers that a human would not. This is precisely the point; each task has a specific, hidden rule. This rule applies to the training examples for each task and repeats in the test for each task. However, the rules are never the same, nor are the tasks. Therefore, the machine must find the underlying logic.
+
+It is somewhat akin to an IQ test for the machine.
+
+You can find more details at the following address:
+https://arcprize.org/guide
+
 
 The data is imported into the "data" folder. Some of it is imported from the ARC Prize Challenge, and the following files were generated:
 - detected_transformations.json
