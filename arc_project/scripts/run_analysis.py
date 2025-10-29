@@ -10,7 +10,7 @@ from analysis.detectors import detect_transformations
 from analysis.spatial_analysis import detect_spatial_changes
 
 def analyze_all_tasks():
-    # Charger toutes les tâches d'entraînement
+    # Charge toutes les tâches d'entraînement
     train_challenges = load_arc_dataset("train_challenges")
     all_results = {}
     
@@ -60,4 +60,5 @@ def summarize_task_analysis(examples):
     return summary
 
 if __name__ == "__main__":
+
     analyze_all_tasks()
