@@ -170,17 +170,14 @@ def detect_transformations(input_grid, output_grid):
                     break
             results['block_repetition'] = valid
 
-        # 2. Vérifie les transformations par quadrant
-        # implémentation à compléter
-
         return results
     
     # Mise à jour de la fonction principale
     def detect_transformations(input_grid, output_grid):
-        # ... Détections existantes
 
-        # Ajouter les détections composites
+        # D'autres détections composites ?
         composite = detect_compositional_transformations(np.array(input_grid), np.array(output_grid))
         info.update(composite)
+
 
         return info
