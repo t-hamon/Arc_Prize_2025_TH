@@ -5,18 +5,18 @@ from sklearn.preprocessing import StandardScaler
 import sys
 import os
 
-# Ajouter le chemin pour résoudre les problèmes d'import
+# Ajoute le chemin pour résoudre les problèmes d'import
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-# Charger le catalogue de transformations
+# Charge le catalogue de transformations
 with open('data/transformation_catalog.json') as f:
     catalog = json.load(f)
 
-# Charger les transformations détectées
+# Charge les transformations détectées
 with open('data/detected_transformations.json') as f:
     tasks = json.load(f)
 
-# Créer une matrice de caractéristiques
+# Crée une matrice de caractéristiques
 feature_names = [t["transformation"] for t in catalog]
 trans_features = []
 task_ids = []
@@ -24,7 +24,7 @@ task_ids = []
 for task_id, task_data in tasks.items():
     features = []
     
-    # Vérifier la structure des données
+    # Vérifie la structure des données
     if isinstance(task_data, list):
         # Ancien format: liste d'exemples
         summary = {}
@@ -33,7 +33,7 @@ for task_id, task_data in tasks.items():
                 if detected:
                     summary[trans] = summary.get(trans, 0) + 1
         
-        # Convertir en fréquences
+        # Convertit en fréquences
         total_examples = len(task_data)
         for trans in summary:
             summary[trans] = summary[trans] / total_examples
@@ -55,7 +55,7 @@ X = scaler.fit_transform(trans_features)
 kmeans = KMeans(n_clusters=20, random_state=42, n_init=10)
 clusters = kmeans.fit_predict(X)
 
-# Sauvegarder la classification
+# Sauvegarde la classification
 classification = {}
 for task_id, cluster_id in zip(task_ids, clusters):
     classification[task_id] = {
@@ -65,5 +65,6 @@ for task_id, cluster_id in zip(task_ids, clusters):
 
 with open("data/task_classification.json", "w") as f:
     json.dump(classification, f, indent=2)
+
 
 print(f"Tâches classifiées en {kmeans.n_clusters} clusters")
